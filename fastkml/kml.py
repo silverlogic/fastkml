@@ -1329,13 +1329,13 @@ class Schema(_BaseObject):
         HTML markup.
         """
         allowed_types = [
-            'string', 'int', 'uint', 'short', 'ushort',
-            'float', 'double', 'bool'
+            'string', 'int', 'uint', 'long', 'ulong',
+            'short', 'ushort', 'float', 'double', 'bool'
         ]
         if type not in allowed_types:
             raise TypeError(
-                "type must be one of ""'string', 'int', 'uint', 'short', "
-                "'ushort', 'float', 'double', 'bool'"
+                "type must be one of ""'string', 'int', 'uint', 'long', 'ulong',"
+                "'short', 'ushort', 'float', 'double', 'bool'"
             )
         else:
             # TODO explicit type conversion to check for the right type
